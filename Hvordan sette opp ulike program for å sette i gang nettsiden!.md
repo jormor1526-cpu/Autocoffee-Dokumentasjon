@@ -35,9 +35,8 @@ Dette er nødvendig for å kunne motta webhooks fra Vipps API under testing.
 ---
 Tilgang til nettsiden
 
-![Autocoffee bilde](Autocoffee.png)
-
 https://fragmented-georgeanna-iatric.ngrok-free.dev/
 
 Brukergrensesnittet er enkelt og intuitivt, og gjør det lett for brukeren å forstå bestillingsprosessen og navigere i løsningen.
 
+![Autocoffee](Autocoffee.png)
