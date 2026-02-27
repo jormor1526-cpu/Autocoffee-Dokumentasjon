@@ -1,0 +1,10 @@
+For å starte uvicorn gå inn i linux terminalen og skriv følgende: 
+cd ~/robot_backend
+Source venv/bin/activate
+Uvicorn main:app --host 0.0.0.0 --port 3000 --reload
+For å starte ngrok åpne en ny terminal og skriv følgende:
+ngrok http 3000
+
+NB:
+Vi bruker disse to for å sikre at koden blir kjørt på en lokal webserver samtidig som at en sikker tunnel blir laget gjennom brannmuren. 
+Du får en offentlig url som sender ekstern traffikk direkte til din lokale maskin
