@@ -39,4 +39,4 @@ https://fragmented-georgeanna-iatric.ngrok-free.dev/
 
 Brukergrensesnittet er enkelt og intuitivt, og gjør det lett for brukeren å forstå bestillingsprosessen og navigere i løsningen.
 
-![Autocoffee](image/AutoCoffee.png)
+![Autocoffee](images/AutoCoffee.png)
