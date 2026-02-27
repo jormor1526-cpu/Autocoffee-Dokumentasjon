@@ -1,3 +1,37 @@
-NB:
-Vi bruker disse to for å sikre at koden blir kjørt på en lokal webserver samtidig som at en sikker tunnel blir laget gjennom brannmuren. 
-Du får en offentlig url som sender ekstern traffikk direkte til din lokale maskin
+## Starte backend-server
+
+For å starte FastAPI-serveren med Uvicorn, åpne en Linux-terminal og kjør følgende kommandoer:
+
+```bash
+cd ~/robot_backend
+source venv/bin/activate
+uvicorn main:app --host 0.0.0.0 --port 3000 --reload
+```
+
+Dette starter applikasjonen på en lokal webserver tilgjengelig på port 3000.
+
+---
+
+## Starte ngrok (utvikling)
+
+Åpne en ny terminal og kjør:
+
+```bash
+ngrok http 3000
+```
+
+---
+
+## Merk
+
+Uvicorn og ngrok brukes sammen under utvikling for å:
+
+* kjøre backend-applikasjonen på en lokal webserver
+* opprette en sikker tunnel gjennom brannmur/NAT
+* generere en offentlig URL som videresender ekstern trafikk til den lokale maskinen
+
+Dette er nødvendig for å kunne motta webhooks fra Vipps API under testing.
+
+---
+
+
