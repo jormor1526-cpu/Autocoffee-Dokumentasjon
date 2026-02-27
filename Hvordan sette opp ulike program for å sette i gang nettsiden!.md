@@ -35,7 +35,7 @@ Dette er nødvendig for å kunne motta webhooks fra Vipps API under testing.
 ---
 Tilgang til nettsiden
 
-Nettsiden er tilgjengelig via følgende URL:
+![Autocoffee bilde](Autocoffee.png)
 
 https://fragmented-georgeanna-iatric.ngrok-free.dev/
 
