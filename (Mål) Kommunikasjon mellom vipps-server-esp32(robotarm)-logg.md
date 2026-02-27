@@ -1,18 +1,44 @@
-Mål: 
-(Jeg skal prøve å lage en nettside??) som kunden kan bruke for å bestille en kaffesmak. Når bestillingen er vidreført betaler de med vipps, vipps API gjennom webhooks kommuniserer med server(pi) og skal deretter snakke med esp32 gjennom (mosquitto)
+# Automatic coffee machine 
 
-Første oppdrag: Laste ned alle viktige program: (oppdateringer!!!!!), mosquitto, vs, venv, python, pip, ngrok???
-Ngrok (kun dev – for å eksponere webhook-endepunktet under testing)
-Lage ngrpok konto 
+## Prosjektbeskrivelse
 
-Andre oppdrag: 
-Sette opp kode for nettside (html) - ferdig
-Sette opp alle programvarer (ngrok, uvicon, fastapi, osv)- ferdig
-Lage logo- ferdig
+Dette prosjektet er et digitalt bestillingssystem for kaffesmaking. Kunder kan legge inn bestilling via en nettside og gjennomføre betaling med Vipps. Når betalingen er bekreftet, mottar backend-serveren en webhook fra Vipps API og sender videre informasjon til en ESP32-enhet.
 
-Tredje oppdrag:
-Sette opp bankkonto - pågående
-Sette opp vippskonto- pågående 
+Kommunikasjonen mellom server og maskinvare skjer via MQTT ved bruk av Mosquitto.
 
-Fjerde oppdrag
-Test- ikke startet
+---
+
+## Systemarkitektur
+
+1. Kunde legger inn bestilling via nettsiden.
+2. Betaling gjennomføres gjennom Vipps.
+3. Vipps sender betalingsbekreftelse via webhook til backend.
+4. Backend behandler forespørselen.
+5. Serveren publiserer en melding via MQTT.
+6. ESP32 mottar meldingen og utfører tilhørende handling.
+
+---
+
+## Teknologi
+
+* Frontend: HTML
+* Backend: Python og FastAPI
+* Server: Uvicorn
+* Betalingsintegrasjon: Vipps API (webhooks)
+* Meldingsprotokoll: MQTT (Mosquitto)
+* Maskinvare: ESP32
+
+---
+
+## Prosjektstatus
+
+| Oppgave                    | Status       |
+| -------------------------- | ------------ |
+| Nettside (HTML)            | Ferdig       |
+| Backend-oppsett            | Ferdig       |
+| Logo                       | Ferdig       |
+| Bankkonto                  | Pågående     |
+| Vipps-konto og integrasjon | Pågående     |
+| Testing                    | Ikke startet |
+
+
