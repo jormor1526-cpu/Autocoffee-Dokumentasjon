@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Autocoffee – Robot Demo</title>
-    <!-- Link til CSS-fil som styrer styling -->
-    <link rel="stylesheet" href="static/styles.css">
+    <!-- Tittel som vises i nettleserfanen -->
+    <title>Autocoffe – Robot Demo</title>
+
+    <!-- Koble til ekstern CSS for styling -->
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
-    <!-- Hovedoverskrift -->
+    <!-- Hovedoverskrift på siden -->
     <h1>Autocoffee</h1>
 
-    <!-- Bilde av robotarmen -->
-    <img src="image/Autocoffee.png" alt="Robot Arm" height="150" width="500">
+    <!-- Bilde av robotarm -->
+    <img src="/static/bilde.png" alt="Robot Arm" height="150" width="500">
 
-    <!-- Instruksjonstekst -->
+    <!-- Instruksjonstekst for brukeren -->
     <p>Trykk knappen for å aktivere robotarmen for 18kr</p>
 
-    <!-- Betalingsskjema med Vipps -->
+    <!-- Betalingsskjema som sender data til /pay via POST -->
     <form method="post" action="/pay">
-        <!-- Inputfelt for telefonnummer -->
+        <!-- Tekstfelt for å skrive inn telefonnummer -->
         <input type="text" name="phone" placeholder="Skriv inn telefonnummer" required>
-        <!-- Submit-knapp -->
+
+        <!-- Submit-knapp for betaling via Vipps -->
         <button type="submit">Betal 18 kr med Vipps</button>
     </form>
 </body>
