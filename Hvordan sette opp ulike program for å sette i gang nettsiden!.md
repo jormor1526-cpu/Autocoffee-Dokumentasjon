@@ -33,5 +33,11 @@ Uvicorn og ngrok brukes sammen under utvikling for å:
 Dette er nødvendig for å kunne motta webhooks fra Vipps API under testing.
 
 ---
+Tilgang til nettsiden
 
+Nettsiden er tilgjengelig via følgende URL:
+
+https://fragmented-georgeanna-iatric.ngrok-free.dev/
+
+Brukergrensesnittet er enkelt og intuitivt, og gjør det lett for brukeren å forstå bestillingsprosessen og navigere i løsningen.
 
