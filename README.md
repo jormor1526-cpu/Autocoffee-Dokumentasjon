@@ -37,7 +37,7 @@ Kommunikasjonen mellom server og maskinvare skjer via MQTT ved bruk av Mosquitto
 | Nettside (HTML)            | Ferdig       |
 | Backend-oppsett            | Ferdig       |
 | Logo                       | Ferdig       |
-| Bankkonto                  | Pågående     |
+| Bankkonto                  | Ferdig       |
 | Vipps-konto og integrasjon | Pågående     |
 | Testing                    | Ikke startet |
 
